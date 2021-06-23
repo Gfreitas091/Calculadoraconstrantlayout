@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+
+    <TextView
+        android:id="@+id/expressao"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/Limpar"
+        style="@style/Operators_Button"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:text="@string/limpar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expressao"
+        />
+
+    <Button
+        android:id="@+id/Divisao"
+        style="@style/Operators_Button"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:text="@string/divisao"
+        app:layout_constraintLeft_toRightOf="@id/Limpar"
+        app:layout_constraintTop_toBottomOf="@id/expressao"
+
+         />
+
+    <Button
+        android:id="@+id/numero_sete"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_sete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Limpar" />
+
+    <Button
+        android:id="@+id/numero_oito"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_oito"
+        app:layout_constraintLeft_toRightOf="@id/numero_sete"
+        app:layout_constraintTop_toTopOf="@+id/numero_sete"
+         />
+
+    <Button
+        android:id="@+id/numero_nove"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_nove"
+        app:layout_constraintTop_toTopOf="@+id/numero_oito"
+        app:layout_constraintStart_toEndOf="@id/numero_oito"/>
+
+
+    <Button
+        android:id="@+id/multiplicacao"
+        style="@style/Operators_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/multiplicacao"
+        app:layout_constraintStart_toEndOf="@id/numero_nove"
+        app:layout_constraintTop_toTopOf="@id/numero_nove"
+         />
+
+    <Button
+        android:id="@+id/numero_quatro"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_quatro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numero_sete" />
+
+    <Button
+        android:id="@+id/numero_cinco"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_cinco"
+        app:layout_constraintLeft_toRightOf="@id/numero_quatro"
+        app:layout_constraintTop_toTopOf="@id/numero_quatro"
+         />
+
+    <Button
+        android:id="@+id/numero_seis"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_seis"
+        app:layout_constraintTop_toTopOf="@id/numero_cinco"
+        app:layout_constraintStart_toEndOf="@id/numero_cinco"
+         />
+
+    <Button
+        android:id="@+id/subtracao"
+        style="@style/Operators_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/subtracao"
+        app:layout_constraintStart_toEndOf="@id/numero_seis"
+        app:layout_constraintTop_toTopOf="@id/numero_seis"
+         />
+
+    <Button
+        android:id="@+id/numero_um"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_um"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numero_quatro"
+         />
+
+    <Button
+        android:id="@+id/numero_dois"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_dois"
+        app:layout_constraintLeft_toRightOf="@id/numero_um"
+        app:layout_constraintTop_toTopOf="@id/numero_um"
+        />
+
+    <Button
+        android:id="@+id/numero_tres"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/numero_tres"
+        app:layout_constraintTop_toTopOf="@id/numero_dois"
+        app:layout_constraintStart_toEndOf="@id/numero_dois"
+         />
+
+    <Button
+        android:id="@+id/adicao"
+        style="@style/Operators_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/adicao"
+        app:layout_constraintStart_toEndOf="@id/numero_tres"
+        app:layout_constraintTop_toTopOf="@id/numero_tres"
+         />
+
+    <Button
+        android:id="@+id/ponto"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/ponto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numero_um"
+         />
+
+    <Button
+        android:id="@+id/numero_zero"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/mumero_zero"
+        app:layout_constraintLeft_toRightOf="@id/ponto"
+        app:layout_constraintTop_toTopOf="@id/ponto"
+        />
+
+    <Button
+        android:id="@+id/backspace"
+        style="@style/Numbers_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/backspace"
+        app:layout_constraintTop_toTopOf="@id/numero_zero"
+        app:layout_constraintStart_toEndOf="@id/numero_zero"
+        />
+
+    <Button
+        android:id="@+id/igual"
+        style="@style/Operators_Button"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:text="@string/igual"
+        app:layout_constraintStart_toEndOf="@id/backspace"
+        app:layout_constraintTop_toTopOf="@id/backspace"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
